@@ -1,0 +1,25 @@
+[forum]
+; forum username
+username=
+; forum password
+password=
+; forum thread id
+threadid=
+; forum url (must end with /)
+forumurl=
+
+[general]
+; absolute path to the csv file with all the entries
+csvpath=
+; how many entries to post at the same time
+numposts=2
+; time between posts in seconds
+delay=600
+; image directory
+; leave empty if not needed
+; adds the following fields to the entry object:
+; hasimage (bool)
+; imgname (string)
+; imgsize[0] (int) = image width
+; imgsize[1] (int) = image height
+imagedir=

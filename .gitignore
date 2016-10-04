@@ -1,0 +1,9 @@
+*
+!.gitignore
+!LICENSE.txt
+!README.md
+!templates/
+!templates/forumpost.html
+!main.py
+!setup.py
+!config.ini.example
