@@ -25,6 +25,6 @@ You can access these values in the template by their column header name:
 
 And it's rendered as:
 
-100. Vertigo - (23 points)
+100\. Vertigo - (23 points)
 
 The default template assumes a single column called "entry".
