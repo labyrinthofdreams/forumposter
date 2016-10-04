@@ -11,16 +11,16 @@ if using the Python script)
 
 So if your CSV looks like this (note that a header is always required):
 
-"rank","movie","score"
-"1","Citizen Kane","155"
-"2","2001: A Space Odyssey","120"
-...
+"rank","movie","score"  
+"1","Citizen Kane","155"  
+"2","2001: A Space Odyssey","120"  
+...  
 "100","Vertigo","23"
 
 You can access these values in the template by their column header name:
 
-{% for entry in entries %}
-{{ entry.rank }}. {{ entry.movie }} - ({{ entry.score }} points) 
+{% for entry in entries %}  
+{{ entry.rank }}. {{ entry.movie }} - ({{ entry.score }} points)   
 {% endfor %}
 
 And it's rendered as:
