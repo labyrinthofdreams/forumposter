@@ -208,7 +208,13 @@ if __name__ == '__main__':
         entries.reverse()
         if IMAGEDIR:
             find_images(IMAGEDIR, entries)
-        start_post_scheduler(POST_DELAY, entries, NUM_POSTS)
+        # Verify that we're not accidentally posting the first entry
+        print '=' * 80
+        print compose_post([entries[0]])
+        print '=' * 80
+        answer = raw_input('Is this the first entry you want to post? [y/n]: ')
+        if answer.lower() == 'y':
+            start_post_scheduler(POST_DELAY, entries, NUM_POSTS)
     except Exception, e:
         import traceback
         traceback.format_exc()
