@@ -14,13 +14,13 @@ from PIL import Image
 config = ConfigParser.RawConfigParser()
 config.read('config.ini')
 
-USERNAME = config.get('forum', 'username')
-PASSWORD = config.get('forum', 'password')
-THREADID = config.get('forum', 'threadid')
-BASEURL = config.get('forum', 'forumurl')
-IMAGEDIR = config.get('general', 'imagedir')
+USERNAME = config.get('forum', 'username').strip()
+PASSWORD = config.get('forum', 'password').strip()
+THREADID = config.get('forum', 'threadid').strip()
+BASEURL = config.get('forum', 'forumurl').strip()
+IMAGEDIR = config.get('general', 'imagedir').strip()
 
-CSV_PATH = config.get('general', 'csvpath')
+CSV_PATH = config.get('general', 'csvpath').strip()
 
 NUM_POSTS = config.getint('general', 'numposts')
 POST_DELAY = config.getint('general', 'delay')
